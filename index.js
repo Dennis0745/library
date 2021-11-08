@@ -3,6 +3,7 @@ if(process.env.NODE_ENV !== 'production'){
 }
 const express = require('express')
 const mongoose = require('mongoose')
+const methodOverride = require('method-override')
 
 mongoose.connect(process.env.database, {useNewUrlParser: true})
 const db = mongoose.connection
@@ -18,6 +19,7 @@ app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 app.set('layout', 'layouts/layout')
 app.use(expressLayouts)
+app.use(methodOverride('_method'))
 app.use(express.static('public'))
 
 const Router = require('./routes/index.js')
