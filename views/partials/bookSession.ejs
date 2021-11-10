@@ -1,0 +1,11 @@
+<% bookCoverClass = locals.large ? 'book-cover-large' : ''%>
+<% bookSessionClass = locals.large ? 'book-session-large' : ''%>
+
+<div class="book-session <%= bookSessionClass%>">
+
+</div>
+<% books.forEach(book=>{ %>
+    <a href="/books/<%= book.id %>">
+        <img class="book-cover <%= bookCoverClass%>" src="<%= book.coverImagePath %>">
+    </a>
+<% }) %>

@@ -1,8 +1,2 @@
-<h2>Recently Added</h2>
-<div>
-  <% books.forEach(book => { %>
-    <a href="/books/<%= book.id %>">
-      <img height="150" width="140" src="<%= book.coverImagePath %>">
-    </a>
-  <% }) %>
-</div>
+<h2 class="inside-header">Recently Added</h2>
+<%- include('./partials/bookSession.ejs', {books : books, large: true}) %>

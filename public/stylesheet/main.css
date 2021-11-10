@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+@import 'variables.css';
+@import 'header.css';
+@import 'button.css';
+@import 'form.css';
+@import 'author.css';
+@import './book.css';
+
+:root{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: var(--color-text-light)
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, var(--color-background-dark), var(--color-background-light));
+}
+
+.container{
+    max-width: 1200px;
+    margin:auto;
+    margin-bottom: 3rem;
+}
+
+.inside-container{
+    margin: 0 2rem;
+}
+
+.inside-header{
+    font: 1.5rem;
+    font-weight: 600;
+}
+
+.error-message{
+    color: hsl(var(--color-danger), 100%, 50%);
+}
