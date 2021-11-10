@@ -24,7 +24,7 @@
 
 .header-nav li a{
     text-decoration: none;
-    color: var(--color-text-light);
+    color: #f2f2f2;
     font-weight: var(--nav-link-font-weight);
     padding: 1rem;
 }
@@ -34,7 +34,7 @@
 }
 
 .header-title{
-    color: var(--color-text-light);
+    color: #f2f2f2;
     text-decoration: none;
     font-size: var(--nav-title-font-size);
     font-weight: var(--nav-title-font-weight)
